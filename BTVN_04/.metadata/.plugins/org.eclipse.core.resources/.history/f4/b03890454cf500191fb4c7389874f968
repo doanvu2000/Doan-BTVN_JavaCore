@@ -1,0 +1,9 @@
+package Bai_03;
+
+public class Student {
+	private String name;
+	private String code;
+	private int age;
+	public void InputInfo() {}
+	public void ShowInfo(){}
+}

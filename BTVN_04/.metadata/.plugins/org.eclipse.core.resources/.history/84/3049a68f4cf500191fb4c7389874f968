@@ -1,0 +1,10 @@
+package Bai_03;
+
+public class JavaClass {
+	private Student stdList[];
+	private int ratingStar;
+	private void InputStudent(){}
+	private void ShowStudent(){}
+	public void InputClassInfo(){}
+	public void ShowClassInfo(){}
+}

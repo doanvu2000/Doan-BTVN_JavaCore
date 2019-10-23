@@ -1,0 +1,8 @@
+package Bai_01;
+
+public class RunMain {
+	public static void main(String[] args) {
+		Person DiepPig = new Person();
+		Person KhanhDuck = new Person();
+	}
+}

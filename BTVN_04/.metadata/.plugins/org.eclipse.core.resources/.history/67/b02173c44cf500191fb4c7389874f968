@@ -1,0 +1,17 @@
+package Bai_03;
+
+import java.util.Scanner;
+
+public class JavaClass {
+	private Student stdList[];
+	private int ratingStar;
+	int n;
+	Scanner sc = new Scanner(System.in);
+	private void InputStudent(){
+		System.out.print("n = ");
+		n = sc.nextInt();
+	}
+	private void ShowStudent(){}
+	public void InputClassInfo(){}
+	public void ShowClassInfo(){}
+}
