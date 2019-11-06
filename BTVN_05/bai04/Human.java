@@ -4,21 +4,21 @@ package bai04;
 public class Human {
 	// bài 4
 	private String name;
-	private float HP = 100;
-	private float MP = 100;
-	private float dame;
+	private int HP = 100;
+	private int MP = 100;
+	private int dame;
 	int count = 0;
 
 	public void attack(Human x) {
-		dame = (float) (Math.random() * 20);
-		x.dame = (float) (Math.random() * 15);
+		dame = (int) (Math.random() * 20);
+		x.dame = (int) (Math.random() * 15);
 		while (HP > 0 && x.getHP() > 0) {
 			for (int i = 1; i <= 4 && x.getHP() > 0; i++) {
 				x.setHP(x.getHP() - dame);
 				count++;
-				System.out.println("\t=======Lượt đánh thứ " + count + "=======");
+				System.out.println("==============Lượt đánh thứ " + count + "==============");
 				System.out.print("HP " + name + ": " + HP);
-				System.out.println("\tHP " + x.getName() + ": " + x.getHP());
+				System.out.println("\t==vs==\tHP " + x.getName() + ": " + x.getHP());
 				if (HP <= 0) {
 					System.out.println(name+" đã chết, "+x.getName() + " chiến thắng");
 					return;
@@ -31,9 +31,9 @@ public class Human {
 			for (int i = 1; i <= 5 && HP > 0; i++) {
 				HP -= x.dame;
 				count++;
-				System.out.println("\t=======Lượt đánh thứ " + count + "=======");
+				System.out.println("==============Lượt đánh thứ " + count + "==============");
 				System.out.print("HP " + name + ": " + HP);
-				System.out.println("\tHP " + x.getName() + ": " + x.getHP());
+				System.out.println("\t==vs==\tHP " + x.getName() + ": " + x.getHP());
 				if (HP <= 0) {
 					System.out.println(name+" đã chết, "+x.getName() + " chiến thắng");
 					return;
@@ -54,27 +54,27 @@ public class Human {
 		this.name = name;
 	}
 
-	public float getHP() {
+	public int getHP() {
 		return HP;
 	}
 
-	public void setHP(float hP) {
+	public void setHP(int hP) {
 		HP = hP;
 	}
 
-	public float getMP() {
+	public int getMP() {
 		return MP;
 	}
 
-	public void setMP(float mP) {
+	public void setMP(int mP) {
 		MP = mP;
 	}
 
-	public float getDame() {
+	public int getDame() {
 		return dame;
 	}
 
-	public void setDame(float dame) {
+	public void setDame(int dame) {
 		this.dame = dame;
 	}
 }
